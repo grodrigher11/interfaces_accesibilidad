@@ -108,6 +108,55 @@ a {
     padding: 2rem;
 }
 
+/* 
+*
+* Migas de pan
+*/
+
+  .migasdepan { white-space: nowrap; }
+  .migasdepan li {
+      display: inline-block;
+      line-height: 26px;
+      margin: 0 9px 0 -10px;
+      padding: 0 20px;
+      position: relative;
+      font-size: 1.1em;
+  }
+  .migasdepan li::before,
+  .migasdepan li::after {
+      border-right: 1px solid #666666;
+      content: '';
+      display: block;
+      height: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      transform: skewX(45deg);   
+  }
+  .migasdepan li::after {
+      bottom: 0;
+      top: auto;
+      transform: skewX(-45deg);
+  }
+  
+  .migasdepan li:last-of-type::before, 
+  .migasdepan li:last-of-type::after { 
+      display: none; 
+  }
+  
+  .migasdepan li a { 
+     font: bold 24px Sans-Serif;  
+     letter-spacing: -1px; 
+     text-decoration: none;
+  }
+  
+  .migasdepan li:nth-of-type(1) a { color: hsl(0, 0%, 70%); } 
+  .migasdepan li:nth-of-type(2) a { color: hsl(0, 0%, 65%); } 
+  .migasdepan li:nth-of-type(3) a { color: hsl(0, 0%, 50%); } 
+  .migasdepan li:nth-of-type(4) a { color: hsl(0, 0%, 45%); }
+
 
 /* HEADER 
 **************************************/
@@ -729,20 +778,6 @@ div.tab button:hover {
     text-transform: uppercase;
 }
 
-.breadcrumb {
-    background-color: transparent;
-    border-radius: 0;
-    list-style: outside none none;
-    margin-bottom: 0;
-    text-align: right;
-    padding: 0;
-}
-
-.breadcrumb-item {
-    float: none;
-    font-size: 12px;
-    display: inline-block;
-}
 
 .page-link {
     background-color: #edeff2 !important;
@@ -899,17 +934,7 @@ div.tab button:hover {
     margin-bottom: 3rem;
 }
 
-.blog-title-area .breadcrumb {
-    float: none;
-    text-align: left;
-    padding: 0;
-    color: #a3a5a8;
-    margin: 0;
-}
 
-.blog-title-area.text-center .breadcrumb {
-    text-align: center;
-}
 
 .blog-title-area .blog-meta a {
     font-size: 10px;
@@ -918,8 +943,6 @@ div.tab button:hover {
     text-transform: uppercase;
 }
 
-.blog-title-area .breadcrumb-item.active,
-.blog-title-area .breadcrumb-item + .breadcrumb-item::before,
 .blog-title-area .blog-meta small,
 .blog-title-area a {
     color: #a3a5a8;
