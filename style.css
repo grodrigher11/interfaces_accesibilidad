@@ -1684,3 +1684,13 @@ span{
     overflow: hidden;
     display: none; 
 }
+
+.borderError {
+    border: solid;
+    border-color: red;
+}
+
+.red-input:focus {
+    background: yellow;
+    color: red;
+  }
