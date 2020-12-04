@@ -1694,3 +1694,8 @@ span{
     background: yellow;
     color: red;
   }
+
+.maiz:focus-within{
+    background-color: #00B6F1;
+}
+/*no se si quitar esto en el js ya hace el focus como tal pero igual nos interesa resaltarlo con colorius*/

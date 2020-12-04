@@ -46,14 +46,14 @@
                         <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
-            </div>+
+            </div>
         </div>
 
         <div class="header-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1>Maiz</h1>                        
+                        <h1>El maiz</h1>                        
                     </div>
                 </div><!-- end row -->
             </div><!-- end header-logo -->
@@ -61,59 +61,56 @@
 
         <header class="header">
             <div class="container">
-                <nav class="navbar navbar-inverse navbar-toggleable-md">
+                <nav class="navbar navbar-inverse navbar-toggleable-md d-flex justify-content-center text-center">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Forest Timemenu" aria-controls="Forest Timemenu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-md-center" id="Forest Timemenu">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbar-toggler">
+                        <ul class="navbar-nav d-flex justify-content-end mr-5 pr-3 w-50">
                             <li class="nav-item">
                                 <a class="nav-link color-green-hover" title="Index" href="index.html">Index</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link color-green-hover" title="pag 1" href="pag1.html">Pag 1</a>
+                                <a tabindex="1" class="nav-link color-green-hover" title="pag 1" href="pag1.html">El maiz</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link color-green-hover" title="Pag 2" href="pag2.html">Pag 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link color-green-hover" title="Pag 3" href="pag3.html">Pag 3</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link color-green-hover" title="Pag 4" href="pag4.html">Pag 4</a>
-                            </li>
+                                <a class="nav-link color-green-hover" title="Pag 2" href="pag2.html">Las manzanas</a>
+                            </li>   
                         </ul>
+                        <form class="form-inline ">
+                            <input class="form-control mr-sm-2" type="search" required id="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" id="buscar" type="submit">Search</button>
+                          </form>
                     </div>
                 </nav>
             </div><!-- end container -->
         </header><!-- end header -->
-
         
-        <div class="conatiner">
+        <div class="container mt-5">
 
-            <ol class="migasdepan">
+              <ol class="migasdepan">
                 <li><a href="#">Index</a></li>
                 <li><a href="#">El Maiz</a></li>
                 <li><a href="#">Más informacion</a></li>
              </ol>
             
-            <ol class="migasdepan">
-                <li><a href="#">Index</a></li>
-                <li><a href="#">El Maiz</a></li>
-                <li><a href="#">Más informacion</a></li>
-             </ol>
-            
+
+             <div id="error">
+
+             </div>
+
             <div class="row d-flex justify-content-center text-center mt-4">
-                <div class="col-5">
+
+                <div class="col-5 maiz">
                     <h4>El Maiz</h4>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laboriosam molestias, accusantium ea corporis doloremque sint nisi impedit quos sequi cumque magni natus quisquam vero? Cumque iusto temporibus aperiam exercitationem!
-                    <a class="nav-link color-green-hover" title="Ver más" href="garden-category.html">Ver más <span>Podras leer mñas sobre Lorem</span></a>
+                    <a id="12" class="nav-link color-green-hover red-input" id="mas" title="Ver más" href="pag1.html">Ver más <span>Podras leer mñas sobre Lorem</span></a>
                 </div>
     
-                <div class="col-5">
+                <div class="col-5 manzana">
                     <h4>Las manzanas</h4>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laboriosam molestias, accusantium ea corporis doloremque sint nisi impedit quos sequi cumque magni natus quisquam vero? Cumque iusto temporibus aperiam exercitationem!
-                    <a class="nav-link color-green-hover" href="garden-category.html">Ver más <span>Podras leer mñas sobre Lorem</span></a>
+                    <a class="nav-link color-green-hover red-input" href="pag2.html">Ver más <span>Podras leer mñas sobre Lorem</span></a>
                 </div>
             </div>
         </div>
@@ -168,5 +165,6 @@
     
 
 </body>
+
 <script src="js/buscador.js"></script>
 </html>
